@@ -1,0 +1,142 @@
+.boton{
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+    }
+       .boton-primary{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #F0B3B3 0%, #BA8D8D 100%);
+        /*el boton y el espacio donde esta */
+        padding: 10px 20px;
+        border:none;
+        /*la accion sucede cuando pasa el pointer */
+        cursor: pointer;
+        /*tamaño del botón*/
+        width: 142.94px;
+        height: 42px;
+        /* Estilos de fuente y letra */
+        font-family: "Inria Serif";
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;    
+    }
+       .boton-primary:hover{
+         background: linear-gradient(90deg, #d18787 0%, #9e6a6a 100%);
+   
+    }
+       .boton-hover{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #d18787 0%, #9e6a6a 100%);
+        /*el boton y el espacio donde esta */
+        padding: 10px 20px;
+        border:none;
+        /*la accion sucede cuando pasa el pointer */
+        cursor: pointer;
+        color: white;
+        /*tamaño del botón*/
+        width: 142.94px;
+        height: 42px;
+        /* Estilos de fuente y letra */
+        font-family: "Inria Serif";
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;    
+        
+    }
+
+       .boton-focus{              
+        border-radius: 10px;
+        background: linear-gradient(90deg, #F0B3B3 0%, #BA8D8D 100%);
+        /*el boton y el espacio donde esta */
+        padding: 10px 20px;
+        border:none;
+        /*la accion sucede cuando pasa el pointer */
+        cursor: pointer;
+        outline: none;
+        /*tamaño del botón*/
+        width: 142.94px;
+        height: 42px;
+        /* Estilos de fuente y letra */
+        font-family: "Inria Serif";
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+.outline-forzado {
+  outline: 3px solid #e86cda !important;
+  outline-offset: 2px;
+}
+        .boton-focus:focus-visible {
+        outline: 3px solid #e86cda; 
+        outline-offset: 2px;
+        }
+
+        .boton-disabled{
+        border-radius: 10px;
+        background: linear-gradient(90deg, #d6c7c7 0%, #aea0a0 100%);
+        /*el boton y el espacio donde esta */
+        padding: 10px 20px;
+        border:none;
+        /*la accion sucede cuando pasa el pointer o sea nada */
+        cursor: not-allowed;             
+        /*tamaño del botón*/
+        width: 142.94px;
+        height: 42px;
+        /* Estilos de fuente y letra */
+        font-family: "Inria Serif";
+        color: white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        }
+     .boton-cargando {
+  border-radius: 10px;
+  background: linear-gradient(90deg, #d18787 0%, #9e6a6a 100%);
+  padding: 10px 20px;
+  border: none;
+  cursor: not-allowed;
+  width: 142.94px;
+  height: 42px;
+  font-family: "Inria Serif";
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;              
+  align-items: center;      
+  justify-content: center;    
+  gap: 2px;           
+}
+
+.spinner {
+  width: 15px;
+  height: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+.loading-text {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #fff;
+}   
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  }
+}
